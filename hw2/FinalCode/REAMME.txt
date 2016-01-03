@@ -1,0 +1,26 @@
+# README #
+
+partyatjoes1.0 is a shell that runs unix based commands
+
+### What can it do? ###
+
+* run basic unix commands such as, ls, mkdri, touch, pwd, nano
+* if you type history partyatjoes will print the last 10 commands to the screen
+* you can run commands in the background by adding a & to the end of your command
+* type exit to kill the shell
+
+### How do I get set up? ###
+
+* gcc partyatjoes.c
+* ./a.out
+
+# Current Bugs? ###
+if you enter a char after !
+such as !g
+you will get a segmentation fault
+to run a previous command by numner enter !and then the integer number of that command
+
+### Who do I talk to if I am confused? ###
+
+* talk to joe, he is the host of the party
+* jwcrandall@gwmail.gwu.edu

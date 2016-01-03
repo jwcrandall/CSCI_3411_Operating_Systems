@@ -1,0 +1,4 @@
+TLB Hits = 53
+TLB Hit Rate = TLBHits / numAddresses = 0.053000
+Page Faults = 538
+Page Fault Rate = pageTableFaultCounter / numAddresses = 0.538000

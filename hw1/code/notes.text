@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int data;
+int priority;
+int size = 10
+int prioirty_queue[size];
+
+
+insert(int data, int priority){
+	prioirty_queue[data][priority];
+
+}
+
+Insert
+
+Extract-Max
+
+Increase-Key
+
+ExtractMax
+
+void main{
+
+	insert(3,20);
+	insert(5,18);
+	insert(2,20);
+	insert(7,)
+
+
+//in a singl array the index is the priority
+
+}
+
+
+
+
+
+
+}

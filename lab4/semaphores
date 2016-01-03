@@ -1,0 +1,48 @@
+semaphores
+
+can be used to contorl resources access for N resoruces
+	example: a system to reserve study rooms in the library
+
+wait() and signal()
+
+study room semaphore initialize to 10
+	calling wiat decrements the value by 1, unless there are none left, in which case you wait for one to become available.
+
+	calling signal increases tha value by 1.
+
+	as opposed to having one mutex per room.
+
+	a semaphore initilized to 1 == mutex
+
+
+	USAGE
+
+	1. initilize a semaphore to N ( to represnt N recources or N allowable accesses)
+	2. call wait() to decreent a semaphore's value by one
+		if <= 0, wait until the resource is available
+	3. execute critical section.
+	4. call signal() to increment a semaphore's value by one.
+
+	Implementation
+	wait can be implemented with a waiting loop, like mutex
+	Alternative to waiting loop
+		Each semaphore keeps track of a process queue
+		In wait()- instead of causing a process to spinloop, addit to the process queue and susend its execution
+		in signal() - wakeup the process at the head of the queue
+
+	semaphores in C
+
+	incled in semaphore.h
+
+	sem_t - defines a semaphore type
+	sem_init (sem_t *, int, int)
+		the first int is a flag to set if it shoul be shared with a forked process
+		the second is the semaphore's initial value
+
+	sem_wait (sem_t *)
+	sem_post (sem_t *)
+		same as signal()
+	sem_destory (sem_t *)
+
+
+

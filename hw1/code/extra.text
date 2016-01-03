@@ -1,0 +1,74 @@
+/*
+
+int count(node*pointer)
+{
+//use of flyodes cycle finding algorithm
+
+/*Main phase of algorithm: finding a repetition x_i = x_2i
+    The hare moves twice as quickly as the tortoise and
+    # the distance between them increases by 1 at each step.
+    # Eventually they will both be inside the cycle and then,
+    # at some point, the distance between them will be
+    # divisible by the period λ
+*/
+
+ /*
+    struct Node *fast = pointer;
+    while(1){
+        if (!(fast = fast->next)){
+            return 0;
+        }
+        if (fast == pointer){
+            return 1;
+        }
+        if (!(fast = fast->next)){
+            return 0;
+        }
+        if (fast == pointer){
+            return 1;
+        }
+
+    }
+    return 0;
+/*
+        int count = 0;
+        node* current = pointer->next;
+
+        node* tortoise = pointer-Next;
+        while(current != NULL)
+        {
+                count++;
+                current = current->next;
+        }
+        printf("the number of elements in this Single Link List =%5d\n",count);
+*/
+//}
+
+
+
+
+
+
+
+
+
+
+void insertbeg(struct node *m)
+{
+struct node *temp;
+if(start==NULL)
+{
+start=m;
+m->link=start;
+}
+else
+{
+m->link=start;
+temp=start;
+while(temp->link!=start)
+temp=temp->link;
+temp->link=m;
+start=m;
+
+
+

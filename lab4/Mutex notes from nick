@@ -1,0 +1,17 @@
+Mutex
+
+Mutual Exclusion
+Locking mechanism - acquire() and release()
+	Built - in "boolean" variable
+
+Waiting is implemented via a busy loop / spinlock
+	effective if the time to context switch > busy waiting
+
+
+Usage
+Call acquire() to obtain the Mutex Lock
+	if soem else has it, wait
+execute
+
+
+

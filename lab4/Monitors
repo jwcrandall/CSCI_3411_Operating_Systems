@@ -1,0 +1,18 @@
+Monitors
+
+encapsulates programmer defined functions and variables into one synchronized data tyep(a module, class, object, ect.)
+
+special  condition variables that can be used with wait() or singal()
+
+monitor encapsulates the mutex and semaphore process into one big type
+
+purpose of teh monitor help the number of singals and waits instead of having many throughou your code.
+Monitors
+	process P calls signal() is called on a condition
+
+Monitor Implementation
+Monitors are eally only a concept.
+p.229  At the end of the day, you need some way to provide the sycnchronizatoin
+
+They use a monitor in the book to solve the dinning philosphiers problem
+

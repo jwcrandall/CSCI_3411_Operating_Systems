@@ -1,0 +1,75 @@
+//
+
+returnType(* prtName)(paramList);
+
+Ex. int (* myFuncPtr)(int, int)
+
+function: returntype name (parameters)
+
+function pointer: retruntype (* name)(parameter)
+
+Assignment: my function = &myFucntion;
+
+!!!!!!!derefernce (*my function) = my function
+
+
+
+
+
+
+
+
+
+why cant you declare a function pointer like these
+
+int *myFucntion(int, int);   //this declares a function that takes two ints and returns an int star
+
+int *(myfunctionprt(int,int)) //same as above
+
+
+
+we have to
+
+int (*my function pointer) (int, int);
+
+
+//Pthreads
+Threading mechanism for C(POSIX threads)
+
+uasge
+1. create variables to hold thread ID numbers
+2. create thread attributes (can leave at defualts - prioirty level, ect.)
+3. Create and start threads:
+	supply what funciotns
+
+	pthread_attr_init(pthread_attr_t *)
+
+4. create
+
+pthread_create (pthread_t *, pthread_attr_t *, void *(*name)(void *), void *)
+
+	in order - varaibles for ID number, attributes , functions to execute, arguments for the funciton
+
+5. Optional let the parent wait untill all threads are finished
+	pthread_join(pthread_t, NULL);
+
+
+
+
+extra notes
+
+void *         (* name) (void*)
+
+return type    name      param lsit
+
+
+
+
+void pointers, are a pointer that can point to anything
+
+
+
+
+
+
+
